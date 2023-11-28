@@ -1,0 +1,67 @@
+{
+  "project_info": {
+    "project_number": "970496693718",
+    "project_id": "kotlin-first-app-854be",
+    "storage_bucket": "kotlin-first-app-854be.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:970496693718:android:696724254072495d870077",
+        "android_client_info": {
+          "package_name": "com.example.firebass2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxVgFuR80lOgKZ5cOgjhDyvtJf7joZD3c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:970496693718:android:679344b18871d2d1870077",
+        "android_client_info": {
+          "package_name": "com.example.firebass_auth"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxVgFuR80lOgKZ5cOgjhDyvtJf7joZD3c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:970496693718:android:535bcafd6ac74e9b870077",
+        "android_client_info": {
+          "package_name": "com.example.tplogin"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxVgFuR80lOgKZ5cOgjhDyvtJf7joZD3c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
