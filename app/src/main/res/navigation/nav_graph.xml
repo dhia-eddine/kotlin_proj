@@ -9,5 +9,14 @@
         android:id="@+id/dashboardFragment"
         android:name="com.example.tplogin.DashboardFragment"
         android:label="DashboardFragment"
-        tools:layout="@layout/fragment_dashboard"/>
+        tools:layout="@layout/fragment_dashboard">
+        <action
+            android:id="@+id/action_dashboardFragment_to_userListFragment"
+            app:destination="@id/userListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userListFragment"
+        android:name="com.example.tplogin.UserListFragment"
+        tools:layout="@layout/fragment_users_list"
+        android:label="UserListFragment" />
 </navigation>
