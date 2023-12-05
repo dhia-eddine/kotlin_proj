@@ -3,6 +3,7 @@ package com.example.tplogin
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.databinding.DataBindingUtil
 import androidx.drawerlayout.widget.DrawerLayout
@@ -11,6 +12,10 @@ import com.example.tplogin.databinding.ActivityRegistreBinding
 import com.google.android.material.navigation.NavigationView
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
+
+
+
+
 class MainActivity : AppCompatActivity() {
     lateinit var auth: FirebaseAuth
     lateinit var user: FirebaseUser
@@ -32,14 +37,14 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
             finish()
         } else {
-            binding.tvDetails.text = user!!.email.toString()
+          //  binding.tvDetails.text = user!!.email.toString()
         }
-        binding.btnLogout.setOnClickListener {
-            auth.signOut()
-            val intent = Intent(this, Login::class.java)
-            startActivity(intent)
-            finish()
-        }
+        //binding.btnLogout.setOnClickListener {
+          //  auth.signOut()
+            //val intent = Intent(this, Login::class.java)
+            //startActivity(intent)
+            //finish()
+        //}
 
 
     }
@@ -56,14 +61,25 @@ class MainActivity : AppCompatActivity() {
         actionToggle.syncState()
     }
 
-    private fun initNav(navView: NavigationView, binding: ActivityMainBinding) {
+    private fun initNav(navView: NavigationView) {
         navView.setNavigationItemSelectedListener {
-            when (it.itemId) {
-                R.id.users -> {true}
-                R.id.profile -> {true}
-                R.id.logout -> {true}
+            when(it.itemId){
+                R.id.users -> {
+                    val intent = Intent(this, UserList::class.java)
+                    startActivity(intent)
+                    true}
+                R.id.profile -> {
+                    Toast.makeText(this, "profile hi", Toast.LENGTH_SHORT).show()
 
-                else -> {false}
+                    true}
+                R.id.logout -> {
+
+                    auth.signOut()
+                    val intent = Intent(this, Login::class.java)
+                    startActivity(intent)
+                    finish()
+                    true}
+                else -> false
             }
         }
     }
