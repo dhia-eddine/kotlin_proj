@@ -68,6 +68,7 @@ class MainActivity : AppCompatActivity() {
         drawerLayout.addDrawerListener(actionToggle)
 
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.setHomeButtonEnabled(true)
 
 //make icon menu visible
         actionToggle.syncState()
