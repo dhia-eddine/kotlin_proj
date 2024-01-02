@@ -100,6 +100,10 @@ class MainActivity : AppCompatActivity() {
                     Toast.makeText(this, "profile hi", Toast.LENGTH_SHORT).show()
 
                     true}
+                R.id.save_data -> {
+                    Toast.makeText(this, "data hi", Toast.LENGTH_SHORT).show()
+
+                    true}
                 R.id.logout -> {
 
                     auth.signOut()

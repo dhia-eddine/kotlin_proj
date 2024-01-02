@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="tvLastName" type="id">tvLastName</item>
+    <item name="etFirstName" type="id" />
+    <item name="etLastName" type="id" />
+    <item name="tvBio" type="id" />
+    <item name="etBio" type="id" />
+    <item name="saveBtn" type="id" />
+    <item name="tvFirstName" type="id" />
+    <item name="profile_image" type="id" />
+</resources>
